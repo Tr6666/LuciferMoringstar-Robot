@@ -55,7 +55,7 @@ CHAT_LOGS_MESSAGE = """
 
 SPELLMODE_MESSAGE = """
 **__𝗛𝗜 𝗕𝗥𝗢 👋 {mention}**__
-**__𝖢𝗈𝗎𝗅𝖽𝗇'𝗍 𝖥𝗂𝗇𝖽 {query} 𝖬𝗈𝗏𝗂𝖾 ?  Please Click Your Request Name**__"""
+**__𝖢𝗈𝗎𝗅𝖽𝗇'𝗍 𝖥𝗂𝗇𝖽 {query} 𝖬𝗈𝗏𝗂𝖾 ?  𝖯𝗅𝖾𝖺𝗌𝖾 𝖢𝗅𝗂𝖼𝗄 𝖳𝗈 𝖢𝗈𝗇𝖿𝗂𝗋𝗆 𝖸𝗈𝗎𝗋 𝖬𝗈𝗏𝗂𝖾 𝖭𝖺𝗆𝖾**__"""
 
 REQUEST_MESSAGE = """
 **Requested By:** {mention}\n**Requested Name:** {query}\n™ {group_name}"""
