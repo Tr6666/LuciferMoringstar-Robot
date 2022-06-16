@@ -44,7 +44,7 @@ async def group_filters(client, update):
             if settings["spellmode"]:
                 try:
                     reply = search.replace(" ", '+')  
-                    buttons = [[ InlineKeyboardButton("🔍 𝚂𝙴𝙰𝚁𝙲𝙷 𝚃𝙾 𝙶𝙾𝙾𝙶𝙻𝙴 🔎", url=f"https://www.google.com/search?q={reply}") ],[ InlineKeyboardButton("× 𝙲𝙻𝙾𝚂𝙴 ×", callback_data="close") ]]
+                    buttons = [[ InlineKeyboardButton("👉 SEARCH IN GOOGLE 👈", url=f"https://www.google.com/search?q={reply}") ],[ InlineKeyboardButton("× 𝙲𝙻𝙾𝚂𝙴 ×", callback_data="close") ]]
                     spell = await update.reply_text(text=settings["spelltext"].format(query=search, first_name=update.from_user.first_name, last_name=update.from_user.last_name, title=update.chat.title, mention=update.from_user.mention), disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))           
                     await asyncio.sleep(60)
                     await spell.delete()
@@ -85,9 +85,9 @@ async def group_filters(client, update):
         else:
             buttons = btn
             buttons.append([InlineKeyboardButton("📃 Pages 1/1",callback_data="pages"),
-                            InlineKeyboardButton("Close 🗑️", callback_data="close")])
+                            InlineKeyboardButton("Delete 🆑", callback_data="close")])
 
-            buttons.append([InlineKeyboardButton("🤖 𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙿𝙼 🤖", url=f"https://telegram.dog/{temp.Bot_Username}?")])
+            buttons.append([InlineKeyboardButton("👀 Cʟɪᴄᴋ Tᴏ Vɪᴇᴡ PM 👀", url=f"https://telegram.dog/{temp.Bot_Username}?")])
 
             if settings["photo"]:
                 await client.send_photo(chat_id=update.chat.id, photo=random.choice(PICS), caption=MOVIE_TEXT.format(mention=update.from_user.mention, query=search, greeting=None, group_name = f"[{update.chat.title}](t.me/{update.chat.username})" or f"[{update.chat.title}](t.me/{update.from_user.username})"), reply_markup=InlineKeyboardMarkup(buttons), reply_to_message_id=update.id)
@@ -102,7 +102,7 @@ async def group_filters(client, update):
                         InlineKeyboardButton("🗑️", callback_data="close"),
                         InlineKeyboardButton("➡",callback_data=f"nextgroup_0_{keyword}")])
 
-        buttons.append([InlineKeyboardButton("🤖 𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙿𝙼 🤖", url=f"https://telegram.dog/{temp.Bot_Username}")])
+        buttons.append([InlineKeyboardButton("👀 Cʟɪᴄᴋ Tᴏ Vɪᴇᴡ PM 👀", url=f"https://telegram.dog/{temp.Bot_Username}")])
 
         try:             
             if settings["photo"]:
