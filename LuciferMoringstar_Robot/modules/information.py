@@ -42,12 +42,12 @@ async def showid(client, update):
         
     elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         _id = ""
-        _id += f"➲ 𝙲𝙷𝙰𝚃 𝙸𝙳: <code>{update.chat.id}</code>\n"
+        _id += f"👉 𝙲𝙷𝙰𝚃 𝙸𝙳: <code>{update.chat.id}</code>\n"
         if update.reply_to_message:
-            _id += f"➲ 𝚄𝚂𝙴𝚁 𝙸𝙳: <code>{update.from_user.id if update.from_user else 'Anonymous'}</code>\n<b>➲ 𝚁𝙴𝙿𝙻𝙸𝙴𝙳 𝚄𝚂𝙴𝚁 𝙸𝙳: <code>{update.reply_to_message.from_user.id if update.reply_to_message.from_user else 'Anonymous'}</code>\n"        
+            _id += f"👉 𝚄𝚂𝙴𝚁 𝙸𝙳: <code>{update.from_user.id if update.from_user else 'Anonymous'}</code>\n<b>➲ 𝚁𝙴𝙿𝙻𝙸𝙴𝙳 𝚄𝚂𝙴𝚁 𝙸𝙳: <code>{update.reply_to_message.from_user.id if update.reply_to_message.from_user else 'Anonymous'}</code>\n"        
             file_info = get_file_id(update.reply_to_message)
         else:
-            _id += f"➲ 𝚄𝚂𝙴𝚁 𝙸𝙳: <code>{update.from_user.id if update.from_user else 'Anonymous'}</code>\n"
+            _id += f"👉 𝚄𝚂𝙴𝚁 𝙸𝙳: <code>{update.from_user.id if update.from_user else 'Anonymous'}</code>\n"
             file_info = get_file_id(update)
         if file_info:
             _id += f"<b>{file_info.message_type}</b>: <code>{file_info.file_id}</code>\n"
