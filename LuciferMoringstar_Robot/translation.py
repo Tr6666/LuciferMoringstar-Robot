@@ -54,8 +54,8 @@ CHAT_LOGS_MESSAGE = """
 • **{title}**\n• `{id}`\n• **{join}**"""
 
 SPELLMODE_MESSAGE = """
-**__Hello 👋 {mention}**__
-**__Couldn't Find {query} ?  Please Click Your Request Name**__"""
+**__𝗛𝗜 𝗕𝗥𝗢 👋 {mention}**__
+**__𝖢𝗈𝗎𝗅𝖽𝗇'𝗍 𝖥𝗂𝗇𝖽 {query} 𝖬𝗈𝗏𝗂𝖾 ?  Please Click Your Request Name**__"""
 
 REQUEST_MESSAGE = """
 **Requested By:** {mention}\n**Requested Name:** {query}\n™ {group_name}"""
@@ -75,11 +75,11 @@ STATUS_MESSAGE = """
 × 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂 : {users}\n× 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂 : {files}\n× 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂 : {chats}"""
 
 GETFILE_TEXT = """
-𝙷𝙴𝚈 {mention} 𝚈𝙾𝚄𝚁 𝙵𝙸𝙻𝙴 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈
-\n𝙵𝙸𝙻𝙴𝙽𝙰𝙼𝙴 : `{file_name}`\n\n𝙵𝙸𝙻𝙴𝚂𝙸𝚉𝙴 : {file_size}"""
+ʙʀᴇ {mention} ɴɪɴɢᴀ ᴄʟɪᴄᴋ ᴘᴀɴɴᴀ ᴍᴏᴠɪᴇ ɪᴛʜᴏ
+\n𝗠𝗢𝗩𝗜𝗘 𝗡𝗔𝗠𝗘 : `{file_name}`\n\n𝗠𝗕/𝗦𝗜𝗭𝗘 : {file_size}"""
 
 NOT_SUB = """
-𝙸 𝙻𝙸𝙺𝙴 𝚈𝙾𝚄𝚁 𝚂𝙼𝙰𝚁𝚃𝙽𝙴𝚂𝚂, 𝙱𝚄𝚃 𝙳𝙾𝙽'𝚃 𝙱𝙴 𝙾𝚅𝙴𝚁𝚂𝙼𝙰𝚁𝚃 😤.\n 𝙵𝚒𝚛𝚜𝚝 𝚂𝚞𝚋𝚜𝚌𝚛𝚒𝚋𝚎 𝙼𝚢 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 😕"""              
+𝙸 𝙻𝙸𝙺𝙴 𝚈𝙾𝚄𝚁 𝚂𝙼𝙰𝚁𝚃𝙽𝙴𝚂𝚂, 𝙱𝚄𝚃 𝙳𝙾𝙽'𝚃 𝙱𝙴 𝙾𝚅𝙴𝚁𝚂𝙼𝙰𝚁𝚃 😤.\n 𝗙𝗜𝗥𝗦𝗧 𝗝𝗢𝗜𝗡 𝗧𝗮𝗺𝗶𝗹𝗥𝗼𝗮𝗿𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 😕"""              
 
 USAGE_MESSAGE = """
 🤠 🄷🄾🅆 🅃🄾 🅄🅂🄴
