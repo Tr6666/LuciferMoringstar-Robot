@@ -80,7 +80,7 @@ async def start(bot: lucifermoringstar_robot, update):
         return
 
     if len(update.command) != 2:
-        pr0fess0r_99 = [[ InlineKeyboardButton("🎬 Jᴏɪɴ TᴀᴍɪʟRᴏᴀʀs 🎬", url=f"https://t.me/Tamil_Roars") ]] 
+        pr0fess0r_99 = [[ InlineKeyboardButton("🎬 Jᴏɪɴ TᴀᴍɪʟRᴏᴀʀs 🎬", url=f"https://t.me/Tamil_Roars") ]],
         await bot.send_photo(photo=random.choice(PICS), chat_id=update.chat.id, caption=START_MESSAGE.format(mention=update.from_user.mention, name=temp.Bot_Name, username=temp.Bot_Username), reply_markup=InlineKeyboardMarkup(pr0fess0r_99))
 
 @lucifermoringstar_robot.on_message(filters.command(["admin", "admins"]) & filters.private, group=2)
