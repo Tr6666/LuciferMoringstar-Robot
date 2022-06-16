@@ -87,6 +87,8 @@ async def group_filters(client, update):
             buttons.append([InlineKeyboardButton("📃 Pages 1/1",callback_data="pages"),
                             InlineKeyboardButton("Close 🗑️", callback_data="close")])
 
+            buttons.append([InlineKeyboardButton("🎬 𝗛𝗢𝗪 𝗧𝗢 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 🎬", url=f"https://telegram.dog/{temp.Bot_Username}")])
+
             if settings["photo"]:
                 await client.send_photo(chat_id=update.chat.id, photo=random.choice(PICS), caption=MOVIE_TEXT.format(mention=update.from_user.mention, query=search, greeting=None, group_name = f"[{update.chat.title}](t.me/{update.chat.username})" or f"[{update.chat.title}](t.me/{update.from_user.username})"), reply_markup=InlineKeyboardMarkup(buttons), reply_to_message_id=update.id)
             else:
