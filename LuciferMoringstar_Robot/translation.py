@@ -75,7 +75,7 @@ STATUS_MESSAGE = """
 × 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂 : {users}\n× 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂 : {files}\n× 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂 : {chats}"""
 
 GETFILE_TEXT = """
-ʙʀᴇ {mention} ɴɪɴɢᴀ ᴄʟɪᴄᴋ ᴘᴀɴɴᴀ ᴍᴏᴠɪᴇ ɪᴛʜᴏ
+{mention} ʙʀᴏ ɴɪɴɢᴀ ᴄʟɪᴄᴋ ᴘᴀɴɴᴀ ᴍᴏᴠɪᴇ ɪᴛʜᴏ
 \n𝗠𝗢𝗩𝗜𝗘 𝗡𝗔𝗠𝗘 : `{file_name}`\n\n𝗠𝗕/𝗦𝗜𝗭𝗘 : {file_size}"""
 
 NOT_SUB = """
