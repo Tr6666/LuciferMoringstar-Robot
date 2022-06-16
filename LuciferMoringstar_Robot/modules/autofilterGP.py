@@ -100,6 +100,8 @@ async def group_filters(client, update):
                         InlineKeyboardButton("🗑️", callback_data="close"),
                         InlineKeyboardButton("➡",callback_data=f"nextgroup_0_{keyword}")])
 
+        buttons.append([InlineKeyboardButton("🎬 𝗛𝗢𝗪 𝗧𝗢 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 🎬", url=f"https://telegram.dog/{temp.Bot_Username}")])
+
         try:             
             if settings["photo"]:
                 try:
