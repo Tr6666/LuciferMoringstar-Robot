@@ -21,7 +21,7 @@
 # SOFTWARE.
 
 # Telegram Link : https://telegram.dog/Mo_Tech_Group
-# Repo Link : https://github.com/PR0FESS0R-99/LuciferMoringstar-Robot
+# Repo Link : https://github.com/Tr6666/LuciferMoringstar-Robot
 # License Link : https://github.com/PR0FESS0R-99/LuciferMoringstar-Robot/blob/LuciferMoringstar-Robot/LICENSE
 
 import random, asyncio
