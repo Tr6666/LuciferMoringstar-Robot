@@ -58,7 +58,7 @@ SPELLMODE_MESSAGE = """
 𝖢𝗈𝗎𝗅𝖽𝗇'𝗍 𝖥𝗂𝗇𝖽 {query} 𝖬𝗈𝗏𝗂𝖾 ?  𝖯𝗅𝖾𝖺𝗌𝖾 𝖢𝗅𝗂𝖼𝗄 𝖳𝗈 𝖢𝗈𝗇𝖿𝗂𝗋𝗆 𝖸𝗈𝗎𝗋 𝖬𝗈𝗏𝗂𝖾 𝖭𝖺𝗆𝖾"""
 
 REQUEST_MESSAGE = """
-**Requested By:** {mention}\n**Requested Name:** {query}\n™ {group_name}"""
+Rᴇǫᴜᴇsᴛᴇᴅ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ : {query}\n\nRᴇǫᴜᴇsᴛᴇᴅ Bʏ : {mention}\n\n\n😌 ɪꜰ ᴛʜᴇ ᴍᴏᴠɪᴇ ʏᴏᴜ ᴀʀᴇ ʟᴏᴏᴋɪɴɢ ꜰᴏʀ ɪs ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ ᴛʜᴇɴ ʟᴇᴀᴠᴇ ᴀ ᴍᴇssᴀɢᴇ ʙᴇʟᴏᴡ 😌\n\nᴇxᴀᴍᴘʟᴇ : \n\nᴇɴᴛᴇʀ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ (ʏᴇᴀʀ) ᴛᴀɢ @admin"""
 
 WELCOME_MESSAGE = """
 𝙷𝙴𝙻𝙻𝙾 {mention} 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 {group_name}"""
