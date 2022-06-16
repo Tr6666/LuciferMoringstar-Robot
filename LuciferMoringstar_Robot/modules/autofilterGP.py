@@ -87,7 +87,7 @@ async def group_filters(client, update):
             buttons.append([InlineKeyboardButton("📃 Pages 1/1",callback_data="pages"),
                             InlineKeyboardButton("Close 🗑️", callback_data="close")])
 
-            buttons.append([InlineKeyboardButton("🎬 𝗛𝗢𝗪 𝗧𝗢 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 🎬", url=f"https://telegram.dog/{temp.Bot_Username}")])
+            buttons.append([InlineKeyboardButton("🎬 𝗛𝗢𝗪 𝗧𝗢 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 🎬", url=f"https://t.me/Tamil_Roars/16")])
 
             buttons.append([InlineKeyboardButton("💯 𝗨𝗡𝗔𝗕𝗟𝗘 𝗧𝗢 𝗔𝗖𝗖𝗘𝗦 𝗦𝗢𝗟𝗩𝗘𝗗 💯", url=f"https://droplink.co/TamilRoarsFiles")])
 
@@ -104,7 +104,7 @@ async def group_filters(client, update):
                         InlineKeyboardButton("🗑️", callback_data="close"),
                         InlineKeyboardButton("➡",callback_data=f"nextgroup_0_{keyword}")])
 
-        buttons.append([InlineKeyboardButton("🎬 𝗛𝗢𝗪 𝗧𝗢 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 🎬", url=f"https://telegram.dog/{temp.Bot_Username}")])
+        buttons.append([InlineKeyboardButton("🎬 𝗛𝗢𝗪 𝗧𝗢 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 🎬", url=f"https://t.me/Tamil_Roars/16")])
 
         buttons.append([InlineKeyboardButton("💯 𝗨𝗡𝗔𝗕𝗟𝗘 𝗧𝗢 𝗔𝗖𝗖𝗘𝗦 𝗦𝗢𝗟𝗩𝗘𝗗 💯", url=f"https://droplink.co/TamilRoarsFiles")])
 
