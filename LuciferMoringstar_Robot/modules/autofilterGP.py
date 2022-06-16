@@ -45,7 +45,7 @@ async def group_filters(client, update):
                 try:
                     reply = search.replace(" ", '+')  
                     buttons = [[ InlineKeyboardButton("👉 𝖲𝖤𝖠𝖱𝖢𝖧 𝖨𝖭 𝖦𝖮𝖮𝖦𝖫𝖤 👈", url=f"https://www.google.com/search?q={reply}") ],[ InlineKeyboardButton("× 𝖢𝖫𝖮𝖲𝖤 ×", callback_data="close") ]]
-                    spell = await update.reply_text(text=settings["spelltext"].format(query=search, first_name=update.from_user.first_name, last_name=update.from_user.last_name, title=update.chat.title, mention=update.from_user.mention), disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))           
+                    spell = await update.reply_text(text=settings[𝗛𝗜 𝗕𝗥𝗢 👋 {mention}\n𝖢𝗈𝗎𝗅𝖽𝗇'𝗍 𝖥𝗂𝗇𝖽 {query} 𝖬𝗈𝗏𝗂𝖾 ?  𝖯𝗅𝖾𝖺𝗌𝖾 𝖢𝗅𝗂𝖼𝗄 𝖳𝗈 𝖢𝗈𝗇𝖿𝗂𝗋𝗆 𝖸𝗈𝗎𝗋 𝖬𝗈𝗏𝗂𝖾 𝖭𝖺𝗆𝖾].format(query=search, first_name=update.from_user.first_name, last_name=update.from_user.last_name, title=update.chat.title, mention=update.from_user.mention), disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))           
                     await asyncio.sleep(60)
                     await spell.delete()
                 except:
