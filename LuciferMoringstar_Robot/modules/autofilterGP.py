@@ -44,8 +44,8 @@ async def group_filters(client, update):
             if settings["spellmode"]:
                 try:
                     reply = search.replace(" ", '+')  
-                    buttons = [[ InlineKeyboardButton("👉 𝖲𝖤𝖠𝖱𝖢𝖧 𝖨𝖭 𝖦𝖮𝖮𝖦𝖫𝖤 👈", url=f"https://www.google.com/search?q={reply}") ],[ InlineKeyboardButton("× 𝖢𝖫𝖮𝖲𝖤 ×", callback_data="close") ]]
-                    spell = await update.reply_text(text=settings[spelltext].format(query=search, first_name=update.from_user.first_name, last_name=update.from_user.last_name, title=update.chat.title, mention=update.from_user.mention), disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))           
+                    buttons = [[ InlineKeyboardButton("🔍 𝚂𝙴𝙰𝚁𝙲𝙷 𝚃𝙾 𝙶𝙾𝙾𝙶𝙻𝙴 🔎", url=f"https://www.google.com/search?q={reply}") ],[ InlineKeyboardButton("× 𝙲𝙻𝙾𝚂𝙴 ×", callback_data="close") ]]
+                    spell = await update.reply_text(text=settings["spelltext"].format(query=search, first_name=update.from_user.first_name, last_name=update.from_user.last_name, title=update.chat.title, mention=update.from_user.mention), disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))           
                     await asyncio.sleep(60)
                     await spell.delete()
                 except:
@@ -85,9 +85,7 @@ async def group_filters(client, update):
         else:
             buttons = btn
             buttons.append([InlineKeyboardButton("📃 Pages 1/1",callback_data="pages"),
-                            InlineKeyboardButton("Delete 🆑", callback_data="close")])
-
-            buttons.append([InlineKeyboardButton("👀 Cʟɪᴄᴋ Tᴏ Vɪᴇᴡ PM 👀", url=f"https://telegram.dog/{temp.Bot_Username}?")])
+                            InlineKeyboardButton("Close 🗑️", callback_data="close")])
 
             if settings["photo"]:
                 await client.send_photo(chat_id=update.chat.id, photo=random.choice(PICS), caption=MOVIE_TEXT.format(mention=update.from_user.mention, query=search, greeting=None, group_name = f"[{update.chat.title}](t.me/{update.chat.username})" or f"[{update.chat.title}](t.me/{update.from_user.username})"), reply_markup=InlineKeyboardMarkup(buttons), reply_to_message_id=update.id)
@@ -102,28 +100,26 @@ async def group_filters(client, update):
                         InlineKeyboardButton("🗑️", callback_data="close"),
                         InlineKeyboardButton("➡",callback_data=f"nextgroup_0_{keyword}")])
 
-        buttons.append([InlineKeyboardButton("👀 Cʟɪᴄᴋ Tᴏ Vɪᴇᴡ PM 👀", url=f"https://telegram.dog/{temp.Bot_Username}")])
-
         try:             
             if settings["photo"]:
                 try:
                     await client.send_photo(chat_id=update.chat.id, photo=random.choice(PICS), caption=MOVIE_TEXT.format(mention=update.from_user.mention, query=search, greeting=None, group_name = f"[{update.chat.title}](t.me/{update.chat.username})" or f"[{update.chat.title}](t.me/{update.from_user.username})"), reply_markup=InlineKeyboardMarkup(buttons), reply_to_message_id=update.id)
                 except Exception as error:
-                    await client.send_message(chat_id=update.chat.id, text=MOVIE_TEXT, reply_to_message_id=update.id)
-                    await client.send_message(chat_id=update.chat.id, text=f"Error **{e}**", reply_to_message_id=update.id)
-                    await client.send_message(chat_id=update.chat.id, text=REQUEST_TEXT.format(mention=update.from_user.mention, query=search, greeting=None, group_name = f"[{update.chat.title}](t.me/{update.chat.username})" or f"[{update.chat.title}](t.me/{update.from_user.username})"), reply_markup=InlineKeyboardMarkup(buttons), reply_to_message_id=update.id)
+                    await client.send_photo(chat_id=update.chat.id, photo=random.choice(PICS), caption=MOVIE_TEXT, reply_to_message_id=update.id)
+                    await client.send_photo(chat_id=update.chat.id, photo="https://telegra.ph/file/2602c9d464dc2b1a53e0f.jpg", caprion=f"‼️‼️‼️‼️‼️‼️‼️ **🅻︎🅾︎🅶︎🆂︎**\n   ❌️ 🅴︎🆁︎🆁︎🅾︎🆁︎ **{error}**", reply_to_message_id=update.id, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("✖️ 𝙲𝙻𝙾𝚂𝙴 ✖️", callback_data="close") ]] ))
+                    await client.send_photo(chat_id=update.chat.id, photo=random.choice(PICS), caption=REQUEST_TEXT.format(mention=update.from_user.mention, query=search, greeting=None, group_name = f"[{update.chat.title}](t.me/{update.chat.username})" or f"[{update.chat.title}](t.me/{update.from_user.username})"), reply_markup=InlineKeyboardMarkup(buttons), reply_to_message_id=update.id)
             else:
                 try:
                     await client.send_message(chat_id=update.chat.id, text=MOVIE_TEXT.format(mention=update.from_user.mention, query=search, greeting=None, group_name = f"[{update.chat.title}](t.me/{update.chat.username})" or f"[{update.chat.title}](t.me/{update.from_user.username})"), reply_markup=InlineKeyboardMarkup(buttons), reply_to_message_id=update.id)
                 except Exception as error:
                     await client.send_message(chat_id=update.chat.id, text=MOVIE_TEXT, reply_to_message_id=update.id)
-                    await client.send_message(chat_id=update.chat.id, text=f"Error **{e}**", reply_to_message_id=update.id)
+                    await client.send_message(chat_id=update.chat.id, text=f"‼️‼️‼️‼️‼️‼️‼️ **🅻︎🅾︎🅶︎🆂︎**\n   ❌️ 🅴︎🆁︎🆁︎🅾︎🆁︎ **{error}**", reply_to_message_id=update.id, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("✖️ 𝙲𝙻𝙾𝚂𝙴 ✖️", callback_data="close") ]] ))
                     await client.send_message(chat_id=update.chat.id, text=REQUEST_TEXT.format(mention=update.from_user.mention, query=search, greeting=None, group_name = f"[{update.chat.title}](t.me/{update.chat.username})" or f"[{update.chat.title}](t.me/{update.from_user.username})"), reply_markup=InlineKeyboardMarkup(buttons), reply_to_message_id=update.id)
+        except Exception as error:
+            await client.send_message(chat_id=update.chat.id, text=MOVIE_TEXT, reply_to_message_id=update.id)
+            await client.send_photo(chat_id=update.chat.id, photo="https://telegra.ph/file/2602c9d464dc2b1a53e0f.jpg", caprion=f"""‼️‼️‼️‼️‼️‼️‼️ **🅻︎🅾︎🅶︎🆂︎**\n   ❌️ 🅴︎🆁︎🆁︎🅾︎🆁︎ **{error}**""", reply_to_message_id=update.id, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("✖️ 𝙲𝙻𝙾𝚂𝙴 ✖️", callback_data="close") ]] ))
+            await client.send_message(chat_id=update.chat.id, text=REQUEST_TEXT.format(mention=update.from_user.mention, query=search, greeting=None, group_name=f"[{update.chat.title}](t.me/{update.chat.username})" or f"[{update.chat.title}](t.me/{update.from_user.username})"), reply_markup=InlineKeyboardMarkup(buttons), reply_to_message_id=update.id)
 
-        except:
-            pass
-
-            
 
 @Client.on_message(filters.private & filters.command('pmautofilter'))
 async def pmautofilter(client, message):        
