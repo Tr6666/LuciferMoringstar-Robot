@@ -59,13 +59,13 @@ async def group_filters(client, update):
                 
                 if settings["button"]:
                     try:
-                        btn.append([InlineKeyboardButton(f"{filesize} {filename}", callback_data=f'luciferGP#{file_id}')])
+                        btn.append([InlineKeyboardButton(f"{filesize} {filename}", url=f'https://telegram.dog/{temp.Bot_Username}?start=luciferGP_{file_id}')])
                     except:
                         btn.append([InlineKeyboardButton(f"{filesize} {filename}", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}")])
                 else:
                     try:
-                        btn.append([InlineKeyboardButton(f"{filesize}", callback_data=f'luciferGP#{file_id}'),
-                                    InlineKeyboardButton(f"{filename}", callback_data=f'luciferGP#{file_id}')])
+                        btn.append([InlineKeyboardButton(f"{filesize}", url=f'https://telegram.dog/{temp.Bot_Username}?start=luciferGP_{file_id}'),
+                                    InlineKeyboardButton(f"{filename}", url=f'https://telegram.dog/{temp.Bot_Username}?start=luciferGP_{file_id}')])
                     except:
                         btn.append([InlineKeyboardButton(f"{filesize}", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}"),
                                     InlineKeyboardButton(f"{filename}", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}")])
@@ -84,7 +84,8 @@ async def group_filters(client, update):
             }
         else:
             buttons = btn
-            buttons.append([InlineKeyboardButton("📃 Pages 1/1",callback_data="pages"),
+            buttons.append([InlineKeyboardButton("𝗛ɪ Aʀᴜʟᴍᴏᴢʜɪ Vᴀʀᴍᴀɴ ♕︎
+ᴡᴀᴛᴄʜ/ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴏᴠɪᴇs/sᴇʀɪᴇs ᴜsɪɴɢ ᴍᴇ ⌸ Pages 1/1",callback_data="pages"),
                             InlineKeyboardButton("Close 🗑️", callback_data="close")])
 
             buttons.append([InlineKeyboardButton("🎬 𝗛𝗢𝗪 𝗧𝗢 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 🎬", url=f"https://t.me/Tamil_Roars/16")])
@@ -100,9 +101,9 @@ async def group_filters(client, update):
         data = temp.BUTTONS[keyword]
         buttons = data['buttons'][0].copy()
    
-        buttons.append([InlineKeyboardButton(f"📃 1/{data['total']}",callback_data="pages"),
+        buttons.append([InlineKeyboardButton(f"⌸ 1/{data['total']}",callback_data="pages"),
                         InlineKeyboardButton("🗑️", callback_data="close"),
-                        InlineKeyboardButton("➡",callback_data=f"nextgroup_0_{keyword}")])
+                        InlineKeyboardButton("⋙",callback_data=f"nextgroup_0_{keyword}")])
 
         buttons.append([InlineKeyboardButton("🎬 𝗛𝗢𝗪 𝗧𝗢 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 🎬", url=f"https://t.me/Tamil_Roars/16")])
 
