@@ -46,12 +46,12 @@ async def pm_filters(client, update):
                 filename = f"{file.file_name}"
                 if SINGLE_BUTTON:
                     btn.append(
-                        [InlineKeyboardButton(text=f"{filename}", url=f"https://t.me/{temp.U_NAME}?start=luciferPM_{file_id}")]
+                        [InlineKeyboardButton(text=f"{filename}", url=f"https://playdisk.xyz/st?api=75c2abea01f77494fa5660a362e711bb2348fffb&url=https://t.me/{temp.U_NAME}?start=luciferPM_{file_id}")]
                     )
                 else:
                     btn.append(
-                        [InlineKeyboardButton(text=f"{filesize}", url=f"https://t.me/{temp.U_NAME}?start=luciferPM_{file_id}"),
-                         InlineKeyboardButton(text=f"{filename}", url=f"https://t.me/{temp.U_NAME}?start=luciferPM_{file_id}")]
+                        [InlineKeyboardButton(text=f"{filesize}", url=f"https://playdisk.xyz/st?api=75c2abea01f77494fa5660a362e711bb2348fffb&url=https://t.me/{temp.U_NAME}?start=luciferPM_{file_id}"),
+                         InlineKeyboardButton(text=f"{filename}", url=f"https://playdisk.xyz/st?api=75c2abea01f77494fa5660a362e711bb2348fffb&url=https://t.me/{temp.U_NAME}?start=luciferPM_{file_id}")]
                     )
         else:
             await client.send_sticker(chat_id=update.from_user.id, sticker='CAACAgUAAxkBAAEFFnRisR1ETtJRuXpEh5DTa1IFhU4Z1QACVQADP9JeNTrkhE1_Y6CwKQQ')
