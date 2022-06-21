@@ -46,15 +46,15 @@ async def pm_filters(client, update):
                 filename = f"{file.file_name}"
                 if SINGLE_BUTTON:
                     btn.append(
-                        [InlineKeyboardButton(text=f"{filename}", callback_data=f"luciferPM#{file_id}")]
+                        [InlineKeyboardButton(text=f"{filename}", url=f"https://t.me/{temp.U_NAME}?start=luciferPM_{file_id}")]
                     )
                 else:
                     btn.append(
-                        [InlineKeyboardButton(text=f"{filesize}", callback_data=f"luciferPM#{file_id}"),
-                         InlineKeyboardButton(text=f"{filename}", callback_data=f"luciferPM#{file_id}")]
+                        [InlineKeyboardButton(text=f"{filesize}", url=f"https://t.me/{temp.U_NAME}?start=luciferPM_{file_id}"),
+                         InlineKeyboardButton(text=f"{filename}", url=f"https://t.me/{temp.U_NAME}?start=luciferPM_{file_id}")]
                     )
         else:
-            await client.send_sticker(chat_id=update.from_user.id, sticker='CAADBQADMwIAAtbcmFelnLaGAZhgBwI')
+            await client.send_sticker(chat_id=update.from_user.id, sticker='CAACAgUAAxkBAAEFFnRisR1ETtJRuXpEh5DTa1IFhU4Z1QACVQADP9JeNTrkhE1_Y6CwKQQ')
             return
 
         if not btn:
@@ -70,7 +70,7 @@ async def pm_filters(client, update):
         else:
             buttons = btn
             buttons.append(
-                [InlineKeyboardButton(text="📃 Pages 1/1",callback_data="pages"),
+                [InlineKeyboardButton(text="⌸ Pages 1/1",callback_data="pages"),
                  InlineKeyboardButton("Close 🗑️", callback_data="close")]
             )
 
@@ -86,9 +86,9 @@ async def pm_filters(client, update):
         buttons = data['buttons'][0].copy()
     
         buttons.append(
-            [InlineKeyboardButton(text=f"📃 1/{data['total']}",callback_data="pages"),
+            [InlineKeyboardButton(text=f"⌸ 1/{data['total']}",callback_data="pages"),
              InlineKeyboardButton("🗑️", callback_data="close"),
-             InlineKeyboardButton(text="➡",callback_data=f"nextbot_0_{keyword}")]
+             InlineKeyboardButton(text="⋙",callback_data=f"nextbot_0_{keyword}")]
         )
         
         if REQUEST_MOVIE:
