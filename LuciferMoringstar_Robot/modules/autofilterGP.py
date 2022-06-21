@@ -59,9 +59,9 @@ async def group_filters(client, update):
                 
                 if settings["button"]:
                     try:
-                        btn.append([InlineKeyboardButton(f"{filesize} {filename}", url=f'https://telegram.dog/Tamil_Cinema2_Robot?start=muhammedrk-mo-tech-group-{file_id}')])
+                        btn.append([InlineKeyboardButton(f"{filename}", url=f'https://telegram.dog/Tamil_Cinema2_Robot?start=muhammedrk-mo-tech-group-{file_id}')])
                     except:
-                        btn.append([InlineKeyboardButton(f"{filesize} {filename}", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}")])
+                        btn.append([InlineKeyboardButton(f"{filesize}", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}")])
                 else:
                     try:
                         btn.append([InlineKeyboardButton(f"{filesize}", url=f'https://telegram.dog/Tamil_Cinema2_Robot?start=muhammedrk-mo-tech-group-{file_id}'),
