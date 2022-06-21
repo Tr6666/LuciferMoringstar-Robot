@@ -84,8 +84,7 @@ async def group_filters(client, update):
             }
         else:
             buttons = btn
-            buttons.append([InlineKeyboardButton("𝗛ɪ Aʀᴜʟᴍᴏᴢʜɪ Vᴀʀᴍᴀɴ ♕︎
-ᴡᴀᴛᴄʜ/ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴏᴠɪᴇs/sᴇʀɪᴇs ᴜsɪɴɢ ᴍᴇ ⌸ Pages 1/1",callback_data="pages"),
+            buttons.append([InlineKeyboardButton("Pages 1/1",callback_data="pages"),
                             InlineKeyboardButton("Close 🗑️", callback_data="close")])
 
             buttons.append([InlineKeyboardButton("🎬 𝗛𝗢𝗪 𝗧𝗢 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 🎬", url=f"https://t.me/Tamil_Roars/16")])
