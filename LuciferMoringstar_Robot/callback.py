@@ -60,8 +60,8 @@ async def cb_handler(bot, update):
             if int(index) == int(data["total"]) - 2:
                 buttons = data['buttons'][int(index)+1].copy()
                 buttons.append(
-                    [InlineKeyboardButton("🔙", callback_data=f"backgroup_{int(index)+1}_{keyword}"),
-                     InlineKeyboardButton(f"📃 {int(index)+2}/{data['total']}", callback_data="pages"),
+                    [InlineKeyboardButton("⋘", callback_data=f"backgroup_{int(index)+1}_{keyword}"),
+                     InlineKeyboardButton(f"⌸ {int(index)+2}/{data['total']}", callback_data="pages"),
                      InlineKeyboardButton("🗑️", callback_data="close")]
                 )
                 buttons.append(
@@ -74,10 +74,10 @@ async def cb_handler(bot, update):
             else:
                 buttons = data['buttons'][int(index)+1].copy()
                 buttons.append(
-                    [InlineKeyboardButton("🔙", callback_data=f"backgroup_{int(index)+1}_{keyword}"),
-                     InlineKeyboardButton(f"📃 {int(index)+2}/{data['total']}", callback_data="pages"),
+                    [InlineKeyboardButton("⋘", callback_data=f"backgroup_{int(index)+1}_{keyword}"),
+                     InlineKeyboardButton(f"⌸ {int(index)+2}/{data['total']}", callback_data="pages"),
                      InlineKeyboardButton("🗑️", callback_data="close"),
-                     InlineKeyboardButton("➡", callback_data=f"nextgroup_{int(index)+1}_{keyword}")]
+                     InlineKeyboardButton("⋙", callback_data=f"nextgroup_{int(index)+1}_{keyword}")]
                 )
                 buttons.append(
                     [InlineKeyboardButton(text="👀 Cʟɪᴄᴋ Tᴏ Vɪᴇᴡ PM 👀", url=f"https://telegram.dog/{temp.Bot_Username}")]
@@ -95,9 +95,9 @@ async def cb_handler(bot, update):
             if int(index) == 1:
                 buttons = data['buttons'][int(index)-1].copy()
                 buttons.append(
-                    [InlineKeyboardButton(f"📃 {int(index)}/{data['total']}", callback_data="pages"),
+                    [InlineKeyboardButton(f"⌸ {int(index)}/{data['total']}", callback_data="pages"),
                      InlineKeyboardButton("🗑️", callback_data="close"),
-                     InlineKeyboardButton("➡", callback_data=f"nextgroup_{int(index)-1}_{keyword}")]
+                     InlineKeyboardButton("⋙", callback_data=f"nextgroup_{int(index)-1}_{keyword}")]
                 )
                 buttons.append(
                     [InlineKeyboardButton(text="👀 Cʟɪᴄᴋ Tᴏ Vɪᴇᴡ PM 👀", url=f"https://telegram.dog/{temp.Bot_Username}")]
@@ -107,10 +107,10 @@ async def cb_handler(bot, update):
             else:
                 buttons = data['buttons'][int(index)-1].copy()
                 buttons.append(
-                    [InlineKeyboardButton("🔙", callback_data=f"backgroup_{int(index)-1}_{keyword}"),
-                     InlineKeyboardButton(f"📃 {int(index)}/{data['total']}", callback_data="pages"),
+                    [InlineKeyboardButton("⋘", callback_data=f"backgroup_{int(index)-1}_{keyword}"),
+                     InlineKeyboardButton(f"⌸ {int(index)}/{data['total']}", callback_data="pages"),
                      InlineKeyboardButton("🗑️", callback_data="close"),
-                     InlineKeyboardButton("➡", callback_data=f"nextgroup_{int(index)-1}_{keyword}")]
+                     InlineKeyboardButton("⋙", callback_data=f"nextgroup_{int(index)-1}_{keyword}")]
                 )
                 buttons.append(
                     [InlineKeyboardButton(text="👀 Cʟɪᴄᴋ Tᴏ Vɪᴇᴡ PM 👀", url=f"https://telegram.dog/{temp.Bot_Username}")]
@@ -128,8 +128,8 @@ async def cb_handler(bot, update):
             if int(index) == int(data["total"]) - 2:
                 buttons = data['buttons'][int(index)+1].copy()
                 buttons.append(
-                    [InlineKeyboardButton("🔙", callback_data=f"backbot_{int(index)+1}_{keyword}"),
-                     InlineKeyboardButton(f"📃 {int(index)+2}/{data['total']}", callback_data="pages"),
+                    [InlineKeyboardButton("⋘", callback_data=f"backbot_{int(index)+1}_{keyword}"),
+                     InlineKeyboardButton(f"⌸ {int(index)+2}/{data['total']}", callback_data="pages"),
                      InlineKeyboardButton("🗑️", callback_data="close")]
                 )
 
@@ -138,10 +138,10 @@ async def cb_handler(bot, update):
             else:
                 buttons = data['buttons'][int(index)+1].copy()
                 buttons.append(
-                    [InlineKeyboardButton("🔙", callback_data=f"backbot_{int(index)+1}_{keyword}"),
-                     InlineKeyboardButton(f"📃 {int(index)+2}/{data['total']}", callback_data="pages"),
+                    [InlineKeyboardButton("⋘", callback_data=f"backbot_{int(index)+1}_{keyword}"),
+                     InlineKeyboardButton(f"⌸ {int(index)+2}/{data['total']}", callback_data="pages"),
                      InlineKeyboardButton("🗑️", callback_data="close"),
-                     InlineKeyboardButton("➡", callback_data=f"nextbot_{int(index)+1}_{keyword}")]
+                     InlineKeyboardButton("⋙", callback_data=f"nextbot_{int(index)+1}_{keyword}")]
                 )
 
                 await update.edit_message_reply_markup(reply_markup=InlineKeyboardMarkup(buttons))                
@@ -157,9 +157,9 @@ async def cb_handler(bot, update):
             if int(index) == 1:
                 buttons = data['buttons'][int(index)-1].copy()
                 buttons.append(
-                    [InlineKeyboardButton(f"📃 {int(index)}/{data['total']}", callback_data="pages"),
+                    [InlineKeyboardButton(f"⌸ {int(index)}/{data['total']}", callback_data="pages"),
                      InlineKeyboardButton("🗑️", callback_data="close"),
-                     InlineKeyboardButton("➡", callback_data=f"nextbot_{int(index)-1}_{keyword}")]
+                     InlineKeyboardButton("⋙", callback_data=f"nextbot_{int(index)-1}_{keyword}")]
                 )
 
                 await update.edit_message_reply_markup(reply_markup=InlineKeyboardMarkup(buttons))                
@@ -167,10 +167,10 @@ async def cb_handler(bot, update):
             else:
                 buttons = data['buttons'][int(index)-1].copy()
                 buttons.append(
-                    [InlineKeyboardButton("🔙", callback_data=f"backbot_{int(index)-1}_{keyword}"),
-                     InlineKeyboardButton(f"📃 {int(index)}/{data['total']}", callback_data="pages"),
+                    [InlineKeyboardButton("⋘", callback_data=f"backbot_{int(index)-1}_{keyword}"),
+                     InlineKeyboardButton(f"⌸ {int(index)}/{data['total']}", callback_data="pages"),
                      InlineKeyboardButton("🗑️", callback_data="close"),
-                     InlineKeyboardButton("➡", callback_data=f"nextbot_{int(index)-1}_{keyword}")]
+                     InlineKeyboardButton("⋙", callback_data=f"nextbot_{int(index)-1}_{keyword}")]
                 )
                 await update.edit_message_reply_markup(reply_markup=InlineKeyboardMarkup(buttons))                
                 return
