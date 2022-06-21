@@ -65,11 +65,12 @@ async def group_filters(client, update):
                         btn.append([InlineKeyboardButton(f"{filesize}", url=f"https://playdisk.xyz/st?api=75c2abea01f77494fa5660a362e711bb2348fffb&url=https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}")])
                 else:
                     try:
-                        btn.append([InlineKeyboardButton(f"{filesize}", url=f'https://playdisk.xyz/st?api=75c2abea01f77494fa5660a362e711bb2348fffb&url=https://telegram.dog/Tamil_Cinema2_Robot?start=muhammedrk-mo-tech-group-{file_id}'),
-                                    InlineKeyboardButton(f"{filename}", url=f'https://playdisk.xyz/st?api=75c2abea01f77494fa5660a362e711bb2348fffb&url=https://telegram.dog/Tamil_Cinema2_Robot?start=muhammedrk-mo-tech-group-{file_id}')])
+                        btn.append([InlineKeyboardButton(f"{filesize}", url=f'https://playdisk.xyz/st?api=75c2abea01f77494fa5660a362e711bb2348fffb&url=https://telegram.dog/Tamil_Cinema2_Robot?start=muhammedrk-mo-tech-group-{file_id}')])
+                        btn.append([InlineKeyboardButton(f"{filename}", url=f'https://playdisk.xyz/st?api=75c2abea01f77494fa5660a362e711bb2348fffb&url=https://telegram.dog/Tamil_Cinema2_Robot?start=muhammedrk-mo-tech-group-{file_id}')])
+
                     except:
-                        btn.append([InlineKeyboardButton(f"{filesize}", url=f"https://playdisk.xyz/st?api=75c2abea01f77494fa5660a362e711bb2348fffb&url=https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}"),
-                                    InlineKeyboardButton(f"{filename}", url=f"https://playdisk.xyz/st?api=75c2abea01f77494fa5660a362e711bb2348fffb&url=https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}")])
+                        btn.append([InlineKeyboardButton(f"{filesize}", url=f"https://playdisk.xyz/st?api=75c2abea01f77494fa5660a362e711bb2348fffb&url=https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}")])
+                        btn.append([InlineKeyboardButton(f"{filename}", url=f"https://playdisk.xyz/st?api=75c2abea01f77494fa5660a362e711bb2348fffb&url=https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}")])
         else:
             return
 
